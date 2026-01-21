@@ -1,0 +1,39 @@
+:root {
+  --color-navy: #01214f;
+  --color-white: #ffffff;
+  --color-accent: #15def9;
+  --color-muted: #e7ecf4;
+  --color-ink: #0b1830;
+  --shadow-soft: 0 18px 40px rgba(1, 33, 79, 0.14);
+  --shadow-card: 0 12px 24px rgba(1, 33, 79, 0.12);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--color-navy);
+  background: var(--color-white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+.main {
+  overflow-x: hidden;
+}

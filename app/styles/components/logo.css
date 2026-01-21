@@ -1,0 +1,29 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 999px;
+}
+
+.logo--light {
+  background: var(--color-muted);
+}
+
+.logo__img {
+  height: 100px;
+  width: auto;
+  display: block;
+}
+
+.logo__img-navbar {
+  height: 35px;
+  width: auto;
+  display: block;
+}
+
+.logo__img-cta {
+  height: 60px;
+  width: auto;
+  display: block;
+}

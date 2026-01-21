@@ -1,0 +1,47 @@
+.cta {
+  width: 110vw;
+  min-height: 100vh;
+  margin: 0;
+  margin-left: -5vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 8vw;
+  background: linear-gradient(120deg, rgba(1, 33, 79, 0.8), rgba(1, 33, 79, 0.8));
+  color: var(--color-white);
+  background-attachment: fixed;
+}
+
+.cta--home {
+  background:
+    linear-gradient(120deg, rgba(1, 33, 79, 0.8), rgba(1, 33, 79, 0.8)),
+    url("/images/imgs/backgrounds/cta background 1.png") center/cover no-repeat;
+}
+
+.cta--features {
+  background:
+    linear-gradient(120deg, rgba(1, 33, 79, 0.8), rgba(1, 33, 79, 0.8)),
+    url("/images/imgs/backgrounds/cta background 2.png") center/cover no-repeat;
+}
+
+.cta__title {
+  margin: 0;
+  font-size: 1.8rem;
+  max-width: 760px;
+}
+
+.cta__text {
+  margin: 0;
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.cta__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

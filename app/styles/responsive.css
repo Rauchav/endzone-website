@@ -1,0 +1,86 @@
+@media (max-width: 900px) {
+  .navbar {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .navbar__nav {
+    grid-column: 1 / -1;
+    flex-wrap: wrap;
+  }
+
+  .solutions {
+    grid-template-columns: 1fr;
+  }
+
+  .solutions__phone {
+    order: -1;
+  }
+
+  .feature-menu__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .feature__content {
+    position: static;
+    transform: none;
+    max-width: none;
+    width: 100%;
+  }
+
+  .footer__row--content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer__block--social {
+    justify-content: center;
+  }
+
+  .carousel__slide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 90px 8vw 100px;
+  }
+
+  .carousel__card,
+  .carousel__phone {
+    position: static;
+    transform: none;
+    opacity: 1;
+  }
+
+  .carousel__card {
+    text-align: center;
+    align-items: center;
+  }
+
+  .feature__carousel-description {
+    position: static;
+    transform: none;
+    max-width: 520px;
+    margin: 16px auto 0;
+  }
+
+  .trust__track {
+    animation-duration: 24s;
+  }
+
+  .trust__logo {
+    padding: 14px 20px;
+  }
+
+  .trust__logo img {
+    height: 34px;
+  }
+
+  .testimonial__card {
+    padding: 22px;
+  }
+}
