@@ -149,7 +149,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section section--tight cta" id="cta">
+      <section className="section section--tight cta cta--home" id="cta">
         <span className="logo">
           <img className="logo__img-cta" src="/images/logos/logo endzone mixed.svg" alt="Endzone" />
         </span>

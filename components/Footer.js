@@ -11,12 +11,6 @@ export default function Footer() {
           <Link href="/features" className="footer__link">
             Features
           </Link>
-          <Link href="/#solutions" className="footer__link">
-            Solutions
-          </Link>
-          <Link href="/#cta" className="footer__link">
-            Contact
-          </Link>
         </nav>
       </div>
 

@@ -37,12 +37,6 @@ export default function Navbar() {
         <Link href="/features" className="navbar__link">
           Features
         </Link>
-        <Link href="/#solutions" className="navbar__link">
-          Solutions
-        </Link>
-        <Link href="/#cta" className="navbar__link">
-          Contact
-        </Link>
       </nav>
       <div className="navbar__cta">
         <Link href="/features" className="btn btn--primary">

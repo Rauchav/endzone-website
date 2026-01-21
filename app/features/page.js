@@ -3,43 +3,43 @@ import FeatureSection from "../../components/FeatureSection";
 const featureSlides = [
   {
     title: "Screen 01",
-    image: "/images/phone-1.svg",
-    cardTitle: "Title 1",
+    image: "/images/mockups/pag1%20mockup.png",
+    cardTitle: "Scan the code",
     cardText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, urna at tristique sodales, lectus massa tristique ipsum, a viverra massa nisl in sapien."
   },
   {
     title: "Screen 02",
-    image: "/images/phone-2.svg",
-    cardTitle: "Title 2",
+    image: "/images/mockups/pag2%20mockup.png",
+    cardTitle: "Order pop up",
     cardText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, urna at tristique sodales, lectus massa tristique ipsum, a viverra massa nisl in sapien."
   },
   {
     title: "Screen 03",
-    image: "/images/phone-3.svg",
-    cardTitle: "Title 3",
+    image: "/images/mockups/pag3%20mockup.png",
+    cardTitle: "Search for the package",
     cardText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, urna at tristique sodales, lectus massa tristique ipsum, a viverra massa nisl in sapien."
   },
   {
     title: "Screen 04",
-    image: "/images/phone-4.svg",
-    cardTitle: "Title 4",
+    image: "/images/mockups/pag4%20mockup.png",
+    cardTitle: "Verify package info",
     cardText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, urna at tristique sodales, lectus massa tristique ipsum, a viverra massa nisl in sapien."
   },
   {
     title: "Screen 05",
-    image: "/images/phone-5.svg",
-    cardTitle: "Title 5",
+    image: "/images/mockups/pag5%20mockup.png",
+    cardTitle: "Verify customer info",
     cardText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, urna at tristique sodales, lectus massa tristique ipsum, a viverra massa nisl in sapien."
   },
   {
     title: "Screen 06",
-    image: "/images/phone-6.svg",
-    cardTitle: "Title 6",
+    image: "/images/mockups/pag6%20mockup.png",
+    cardTitle: "Customer signature",
     cardText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, urna at tristique sodales, lectus massa tristique ipsum, a viverra massa nisl in sapien."
   }
@@ -101,26 +101,29 @@ export default function FeaturesPage() {
               {
                 title: "EXTERNAL LOAD",
                 text: "Enables the reception of external packages via Endzone's global integration API",
-                icon: "/images/icons/features/external%20load%20icon.png"
+                icon: "/images/icons/features/external%20load%20icon.png",
+                href: "#external-load"
               },
               {
                 title: "MOVE",
                 text: "Records the transfer of parcels between outbound areas or branches, updating the physical location of the parcel in real time.",
-                icon: "/images/icons/features/move%20icon.png"
+                icon: "/images/icons/features/move%20icon.png",
+                href: "#move"
               },
               {
                 title: "LOAD",
                 text: "Allows the reception of packages from other Endzones, providing the corresponding traceability.",
-                icon: "/images/icons/features/load%20icon.png"
+                icon: "/images/icons/features/load%20icon.png",
+                href: "#load"
               }
             ].map((item) => (
-              <button className="feature-menu__card" key={item.title}>
+              <a className="feature-menu__card" href={item.href} key={item.title}>
                 <img className="feature-menu__icon" src={item.icon} alt="" />
                 <div>
                   <h5 className="feature-menu__card-title">{item.title}</h5>
                   <p className="feature-menu__card-text">{item.text}</p>
                 </div>
-              </button>
+              </a>
             ))}
           </div>
 
@@ -137,26 +140,29 @@ export default function FeaturesPage() {
               {
                 title: "CUSTOMER PICKUP (COLLECT)",
                 text: "Manage fast delivery at the counter or store, validating packages by scanning them to mark the order as shipped immediately.",
-                icon: "/images/icons/features/customer%20pickup%20icon.png"
+                icon: "/images/icons/features/customer%20pickup%20icon.png",
+                href: "#customer-pickup"
               },
               {
                 title: "DELIVERY",
                 text: "Manage home delivery with your own or an outsourced fleet using Endzone, capturing proof of delivery to successfully update order status.",
-                icon: "/images/icons/features/delivery%20icon.png"
+                icon: "/images/icons/features/delivery%20icon.png",
+                href: "#delivery"
               },
               {
                 title: "CUSTOM FEATURE",
                 text: "We can create any unique activities or workflows specific to your operations.",
-                icon: "/images/icons/features/new%20feature.png"
+                icon: "/images/icons/features/new%20feature.png",
+                href: "#custom-feature"
               }
             ].map((item) => (
-              <button className="feature-menu__card" key={item.title}>
+              <a className="feature-menu__card" href={item.href} key={item.title}>
                 <img className="feature-menu__icon" src={item.icon} alt="app features icons" />
                 <div>
                   <h5 className="feature-menu__card-title">{item.title}</h5>
                   <p className="feature-menu__card-text">{item.text}</p>
                 </div>
-              </button>
+              </a>
             ))}
           </div>
         </div>
@@ -173,7 +179,7 @@ export default function FeaturesPage() {
         />
       ))}
 
-      <section className="section section--tight cta">
+      <section className="section section--tight cta cta--features">
         <span className="logo">
           <img className="logo__img" src="/images/logos/logo endzone.svg" alt="Endzone" />
         </span>
