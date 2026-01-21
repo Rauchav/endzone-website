@@ -1,4 +1,50 @@
 export default function HomePage() {
+  const clientLogos = [
+    { src: "/images/clients/client1.png", alt: "Aether Logistics" },
+    { src: "/images/clients/client2.png", alt: "Vertex Retail Group" },
+    { src: "/images/clients/client3.png", alt: "Nova Commerce" },
+    { src: "/images/clients/client4.png", alt: "Lumin Supply Co." },
+    { src: "/images/clients/client5.png", alt: "Orbital Express" },
+    { src: "/images/clients/client6.png", alt: "Polaris Fulfillment" },
+    { src: "/images/clients/client7.png", alt: "Pulse Network" },
+    { src: "/images/clients/client8.png", alt: "Atlas Markets" }
+  ];
+
+  const testimonials = [
+    {
+      quote:
+        "Endzone gave us total visibility across every pickup node. Our delivery SLA went from good to unstoppable.",
+      name: "Priya Deshmukh",
+      title: "VP of Operations",
+      company: "Vertex Retail Group",
+      avatar: "/images/testimonials/testimonial1.png"
+    },
+    {
+      quote:
+        "The platform connects our warehouses and stores like a single organism. The customer experience is finally premium.",
+      name: "Daniel Grant",
+      title: "Director of Logistics",
+      company: "Aether Logistics",
+      avatar: "/images/testimonials/testimonial2.png"
+    },
+    {
+      quote:
+        "Endzone's analytics unlocked a new level of precision for last-mile handoff. It's a strategic advantage.",
+      name: "Sofia Alvarez",
+      title: "Chief Supply Chain Officer",
+      company: "Nova Commerce",
+      avatar: "/images/testimonials/testimonial3.png"
+    },
+    {
+      quote:
+        "Implementation was elegant and fast. We scaled pickup points without adding operational complexity.",
+      name: "Ethan Brooks",
+      title: "Head of Fulfillment Strategy",
+      company: "Orbital Express",
+      avatar: "/images/testimonials/testimonial4.png"
+    }
+  ];
+
   return (
     <>
       <section className="hero" id="home">
@@ -16,6 +62,41 @@ export default function HomePage() {
         </div>
         <div className="hero__scroll-indicator">
           <span className="material-symbols-outlined hero__scroll-icon">arrow_circle_down</span>
+        </div>
+      </section>
+
+      <section className="section trust" id="trust">
+        <div className="trust__header">
+          <h2 className="section__title">Companies that already trust Endzone</h2>
+        </div>
+        <div className="trust__marquee" aria-label="Client logos">
+          <div className="trust__track">
+            {[...clientLogos, ...clientLogos].map((logo, index) => (
+              <div className="trust__logo" key={`${logo.alt}-${index}`}>
+                <img src={logo.src} alt={logo.alt} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="trust__testimonials">
+          <h2 className="section__title">Some customers' Testimonials.</h2>
+          <div className="testimonials__grid">
+            {testimonials.map((item) => (
+              <article className="testimonial__card" key={item.name}>
+                <p className="testimonial__quote">"{item.quote}"</p>
+                <div className="testimonial__profile">
+                  <img className="testimonial__avatar" src={item.avatar} alt={item.name} />
+                  <div>
+                    <h4 className="testimonial__name">{item.name}</h4>
+                    <p className="testimonial__role">
+                      {item.title} · {item.company}
+                    </p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
